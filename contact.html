@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact</title>
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/script.js" defer></script></head>
+
+</head>
+
+<body>
+
+
+<header>
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo/kamal_parvez.png" alt="Photo" width="50" height="50" class="d-inline-block align-text-top" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="nav-link" href="services.html">Services</a></li>
+            <li><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+  <section class="py-5">
+    <div class="container">
+      <h1 class="mb-4 text-center">Contact to Communicate</h1>
+      <p class="text-center mb-5">Get in touch for any queries or custom work requests.</p>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Direct Contact Card -->
+        <div class="col-md-5">
+          <div class="card p-4 h-100">
+            <h5>Direct Contact</h5>
+            <p><strong>Address:</strong> West Agargaon, Dhaka, Bangladesh</p>
+            <p><strong>Phone:</strong> +880 1703777773</p>
+            <p><strong>Email:</strong> kamalparvez.se.java@gmail.com</p>
+            <p><strong>Website:</strong> www.sample-website.com</p>
+          </div>
+        </div>
+
+        <!-- Form Card -->
+        <div class="col-md-5">
+          <div class="card p-4 h-100">
+            <h5>Send a Message</h5>
+            <form class="row g-3">
+                  <div class="col-md-12">
+                    <label for="inputFullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="inputFullName"  placeholder="Enter Full Name" required minlength="2">
+                </div>
+                <div class="col-md-12">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail"
+                        placeholder="Enter valid Email Address"
+                        pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
+                        required>
+
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" rows="4" placeholder="Provide your message" required minlength="10" id="inputMessage"></textarea>
+                    <label for="inputMessage">Message</label>
+                </div>
+                  <!-- <div class="mb-3">
+                    <input class="form-control" type="file" id="attachment" />
+                </div> -->
+                <div class="col-12">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="py-5">
+    <div class="container">
+    <h2>Find me on Map</h2>
+    <div class="row g-4 justify-content-center">
+        <!-- Replace API_KEY with real Google Maps API Key -->
+        <iframe 
+            src="https://www.google.com/maps/embed?...">
+        </iframe>
+    </div>
+    </div>
+</section>
+
+</body>
+</html>
